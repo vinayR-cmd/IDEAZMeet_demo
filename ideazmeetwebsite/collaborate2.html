@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navigation Bar */
+        .navcontainer {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #e4e9ef;
+            background-image: linear-gradient(62deg, #e4e9ef 0%, #c7bfe3 100%);
+            padding: 0 50px;
+            border-bottom: 5px solid rgb(48, 83, 148);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navlist {
+            list-style-type: none;
+            display: flex;
+            font-size: 25px;
+            align-items: center;
+        }
+
+        .navlinks {
+            display: flex;
+            gap: 40px;
+            position: relative;
+            left: 100px;
+        }
+
+        .navlinks a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+
+        .navlinks a:hover {
+            color: gray;
+        }
+
+        .navlogo {
+            font-size: 45px;
+            font-weight: 300;
+            position: relative;
+            right: 150px;
+        }
+        .logo{
+            font-size: 45px;
+            font-weight: 300;
+        }
+
+        /* Body Styling */
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 120px;
+
+
+            /* To prevent overlap with the navbar */
+        }
+
+        .containerbox {
+            width: 55%;
+            height: 600px;
+            /* background-color: antiquewhite; */
+            display: flex;
+            flex-direction: row;
+            border: 3px solid rgb(47, 54, 60);
+            padding: 15px;
+            gap: 20px;
+            border-radius: 20px;
+        }
+
+        .rightbox {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            /* background-color: #c7bfe3; */
+        }
+
+        .leftbox {
+            height: 100%;
+            width: 50%;
+            background-image: url(projectimages/pexels-pixabay-52547.jpg);
+            background-size: cover;
+            background-position: center;
+            /* border-top-right-radius: 20px;
+
+            border-bottom-right-radius: 20px; */
+            border: 2px solid rgb(167, 98, 98);
+            border-radius: 20px;
+            /* box-shadow: 8px 8px 15px rgba(165, 42, 42, 0.6),
+                -8px -8px 15px rgba(255, 228, 196, 0.3); */
+                box-shadow: 0 10px 20px rgba(70, 130, 180, 0.5);
+
+        }
+        .leftbox :hover{
+            box-shadow: 0 12px 24px rgba(48, 83, 148, 0.7); 
+        }
+
+        .rightbox h1 {
+            align-self: center;
+            position: relative;
+            font-size: 2.5rem;
+            top: 30px;
+            color: rgb(47, 54, 60);
+
+        }
+
+        form {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .form label {
+            font-size: larger;
+            margin-bottom: 0px;
+            text-align: left;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            padding-left: 10px;
+            color: rgb(47, 54, 60);
+        }
+
+        .form input[type="text"],
+        .form input[type="password"] {
+            width: 100%;
+            background: rgba(52, 26, 26, 0.1);
+            padding: 10px;
+            height: 60px;
+            padding: 0px 20px;
+            margin-bottom: 20px;
+            /* margin: 15px; */
+            border-radius: 25px;
+            color: rgb(44, 37, 37);
+            font-size: larger;
+            border: 2px solid transparent;
+            /* Initially transparent */
+            transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .rightbox button {
+            width: 100%;
+            padding: 10px;
+            /* background-color: rgb(181, 199, 215); */
+            background-image: linear-gradient(62deg, #aacfdd 0%, #b7dfff 100%);
+            color: black;
+            border: none;
+            letter-spacing: 4px;
+            height: 60px;
+            border-radius: 25px;
+            font-size: large;
+            transition: background-color 0.3s;
+            position: relative;
+            top: 15px;
+            border: 2px solid darkblue;
+            transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .rightbox button:hover {
+            background-color: #e4e9ef;
+            background-image: linear-gradient(62deg, #e4e9ef 0%, #c7bfe3 100%);
+            border: 2px solid rgb(48, 83, 148);
+            box-shadow: 0 0 8px rgba(48, 83, 148, 0.5);
+        }
+
+        .rightbox p {
+            text-align: center;
+            margin-top: 10px;
+            font-size: larger;
+            letter-spacing: 2px;
+
+
+        }
+
+        p {
+            position: relative;
+            top: 15px;
+            color: rgb(27, 15, 15);
+        }
+
+        .rightbox p a {
+            text-decoration: none;
+            color: rgb(75, 16, 139);
+        }
+
+        .rightbox p a:hover {
+            color: #c7bfe3;
+        }
+
+        .form input[type="text"]:hover {
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease-in-out; */
+            /* border: 3px solid rgb(27, 15, 15); */
+            border: 2px solid rgb(27, 15, 15);
+            box-shadow: 0 0 8px rgba(27, 15, 15, 0.5);
+        }
+
+        .form input[type="password"]:hover {
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease-in-out; */
+            border: 2px solid rgb(27, 15, 15);
+            box-shadow: 0 0 8px rgba(27, 15, 15, 0.5);
+        }
+
+        .upperbox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+       
+        .backlink {
+            display: inline-block;
+            text-decoration: none;
+            font-size: medium;
+            color: black;
+            background-color: aliceblue;
+            border: 2px solid darkblue;
+            border-radius: 15px;
+            padding: 5px 10px;
+            letter-spacing: 2px;
+            transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .backlink:hover {
+            background-color: #e4e9ef;
+            background-image: linear-gradient(62deg, #e4e9ef 0%, #c7bfe3 100%);
+            border: 2px solid rgb(48, 83, 148);
+            box-shadow: 0 0 8px rgba(48, 83, 148, 0.5);
+        }
+        
+    </style>
+</head>
+
+<body style="background-color: aliceblue;">
+    <header>
+        <div class="navcontainer">
+            <div class="navlogo">
+                <span style="color: rgb(79, 117, 190);font-weight: 300;">
+                    IDEAZ
+                </span> Meet
+            </div>
+            <nav>
+                
+                <ul class="navlist">
+                    <li>
+                        <div class="navlinks">
+                            <a href="index.html">HOME</a>
+                            <!-- <a href="#">ABOUT US</a> -->
+                            <a href="ideazmeetgalley.html">DESIGNS</a>
+                            <a href="collaborate2.html">COLLABORATE</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="containerbox">
+        <div class="rightbox">
+            <div class="upperbox">
+                <div class="logo">
+                    <span style="color: rgb(79, 117, 190);font-weight: 300;">
+                        IDEAZ
+                    </span> Meet
+                </div>
+
+                <a href="index.html" class="backlink">Back to Home</a>
+
+            </div>
+            <form action="#" class="form">
+                <label for="username">USERNAME</label>
+                <input id="username" type="text" required name="Username">
+                <label for="password">PASSWORD</label>
+                <input id="password" type="password" required name="password">
+                <button type="submit"><span>Login</span></button>
+                <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+            </form>
+        </div>
+
+        <div class="leftbox">
+
+        </div>
+    </div>
+</body>
+
+</html>
