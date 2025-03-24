@@ -23,15 +23,15 @@ IDEAZMeet is a sleek and interactive website designed to showcase collaboration 
 ## 📸 Screenshots
 
 ### 🏠 Home Page  
-![Home Page](https://github.com/vinayR-cmd/IDEAZMeet_demo/blob/main/ideazmeetwebsite/projectimages/IDEAZMEET%20screenshot1.png)
-![Home Page](https://github.com/vinayR-cmd/IDEAZMeet_demo/blob/main/ideazmeetwebsite/projectimages/IDEAZMEET%20screenshot2.png)
-![Home Page](https://github.com/vinayR-cmd/IDEAZMeet_demo/blob/main/ideazmeetwebsite/projectimages/IDEAZMEET%20screenshot3.png)
+![Home Page](https://github.com/vinayR-cmd/IDEAZMeet_demo/blob/main/projectimages/IDEAZMEET%20screenshot1.png)
+![Home Page](https://github.com/vinayR-cmd/IDEAZMeet_demo/blob/main/projectimages/IDEAZMEET%20screenshot2.png)
+![Home Page](https://github.com/vinayR-cmd/IDEAZMeet_demo/blob/main/projectimages/IDEAZMEET%20screenshot3.png)
 
 ### 🎨 Design Page  
-![Design Page](https://github.com/vinayR-cmd/IDEAZMeet_demo/blob/main/ideazmeetwebsite/projectimages/IDEAZMEET%20screenshot4.png)
+![Design Page](https://github.com/vinayR-cmd/IDEAZMeet_demo/blob/main/projectimages/IDEAZMEET%20screenshot4.png)
 
 ### 🔐 Collaborate Page  
-![Collaborate Page](https://github.com/vinayR-cmd/IDEAZMeet_demo/blob/main/ideazmeetwebsite/projectimages/IDEAZMEET%20screenshot5.png)
+![Collaborate Page](https://github.com/vinayR-cmd/IDEAZMeet_demo/blob/main/projectimages/IDEAZMEET%20screenshot5.png)
 
 
 
