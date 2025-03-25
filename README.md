@@ -4,6 +4,9 @@
 📌 Overview
 IDEAZMeet is a sleek and interactive website designed to showcase collaboration opportunities. It features an engaging parallax scrolling effect, well-structured grid layouts, and a captivating 3D image gallery.
 
+🌍 Live Demo
+🔗 https://vinayr-cmd.github.io/IDEAZMeet_demo/
+
 🏗️ Project Structure
 1️⃣ Home Page 🏠
 ✅ Parallax scrolling effect for smooth visual appeal.
